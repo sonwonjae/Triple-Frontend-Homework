@@ -1,8 +1,9 @@
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path')
 
-const prod = process.env.NODE_ENV === 'production';
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
+const prod = process.env.NODE_ENV === 'production'
 
 module.exports = {
   mode: prod ? 'production' : 'development',
@@ -43,4 +44,4 @@ module.exports = {
       template: './public/index.html',
     }),
   ],
-};
+}
