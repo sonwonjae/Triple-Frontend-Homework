@@ -1,1 +1,1 @@
-# Triple-Frontend-Homework
+# [트리플] Frontend 과제 #3
