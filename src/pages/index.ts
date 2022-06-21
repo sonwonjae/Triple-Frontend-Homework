@@ -1,1 +1,1 @@
-export { default as Homework } from './Homework'
+export { default as Homework } from './Homework/Homework'

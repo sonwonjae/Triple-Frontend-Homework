@@ -3,11 +3,11 @@ import { useEffect, useState } from 'react'
 import { timing } from '../../utils'
 
 interface CountProps {
-  duration?: number
+  duration: number
   children: number
 }
 
-function Count({ duration = 2000, children }: CountProps) {
+function Count({ duration, children }: CountProps) {
   const [progress, setProgress] = useState(0)
 
   useEffect(() => {

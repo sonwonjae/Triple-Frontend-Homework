@@ -9,9 +9,12 @@ interface StatisticProps {
     duration: number
     delay: number
   }
+  countAnimation: {
+    duration: number
+  }
 }
 
-function Statistic({ upriseAnimation }: StatisticProps) {
+function Statistic({ upriseAnimation, countAnimation }: StatisticProps) {
   return (
     <StatisticStyle.Container>
       <StatisticStyle.Wrapper
@@ -24,19 +27,19 @@ function Statistic({ upriseAnimation }: StatisticProps) {
         <StatisticStyle.AchievementList>
           <li>
             <strong>
-              <Count>{350}</Count>만 명
+              <Count duration={countAnimation.duration}>{350}</Count>만 명
             </strong>
             의 여행자
           </li>
           <li>
             <strong>
-              <Count>{21}</Count>만 개
+              <Count duration={countAnimation.duration}>{21}</Count>만 개
             </strong>
             의 여행 리뷰
           </li>
           <li>
             <strong>
-              <Count>{650}</Count>만 개
+              <Count duration={countAnimation.duration}>{650}</Count>만 개
             </strong>
             의 여행 일정
           </li>
