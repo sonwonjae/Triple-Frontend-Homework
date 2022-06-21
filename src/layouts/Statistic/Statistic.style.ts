@@ -14,7 +14,6 @@ Container.displayName = 'Statistic.Container'
 export const Wrapper = styled(UpriseInOrder)`
   position: relative;
   margin: 0 auto;
-  padding-top: ${({ theme }) => theme.layout.statistic.top};
   max-width: ${({ theme }) => theme.layout.wrapper.maxWidth};
   background-color: ${({ theme }) => theme.color.background.white};
 `
@@ -39,6 +38,7 @@ BestAwardTriple.displayName = 'Statistic.BestAwardTriple'
 
 export const AchievementList = styled.ul`
   margin-left: ${({ theme }) => theme.layout.statistic.content.left};
+  padding-top: ${({ theme }) => theme.layout.statistic.top};
   font-size: ${({ theme }) => theme.layout.achievementList.fontSize};
   letter-spacing: ${({ theme }) => theme.layout.achievementList.letterSpacing};
   color: ${({ theme }) => theme.color.font.default};
