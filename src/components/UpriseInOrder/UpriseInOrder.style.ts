@@ -1,7 +1,7 @@
-import { ReactElement, PropsWithChildren } from 'react'
+import { ReactElement } from 'react'
 import styled, { keyframes } from 'styled-components'
 
-const float = keyframes`
+const uprise = keyframes`
 0% {
   transform: translateY(10px);
   opacity: 0;
@@ -12,27 +12,27 @@ const float = keyframes`
 }
 `
 
-export const SequenceAnimationWrapper = styled.div<{
+export const Wrapper = styled.div<{
   duration: number
-  delay: number
-  children: ReactElement<PropsWithChildren>[]
+  delayList: number[]
+  children: ReactElement[] | ReactElement
 }>`
   & > * {
-    animation-name: ${float};
+    animation-name: ${uprise};
     animation-duration: ${({ duration }) => duration}ms;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
     transform: translateY(10px);
     opacity: 0;
 
-    ${({ delay, children }) =>
-      children.map(
-        (_, index) => `
+    ${({ delayList }) =>
+      delayList.map(
+        (delay, index) => `
           &:nth-child(${index + 1}) {
-            animation-delay: ${delay * index}ms;
+            animation-delay: ${delay}ms;
           }
       `,
       )}
   }
 `
-SequenceAnimationWrapper.displayName = 'Float.SequenceAnimationWrapper'
+Wrapper.displayName = 'Wrapper'

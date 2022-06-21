@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 import BEST_AWARD_TRIPLE_IMG from '../../assets/triple2x.png'
-import { Float } from '../../animations'
+import { UpriseInOrder } from '../../components'
 
 export const Container = styled.div`
   position: relative;
@@ -11,7 +11,7 @@ export const Container = styled.div`
 `
 Container.displayName = 'Statistic.Container'
 
-export const Wrapper = styled(Float.SequenceAnimationWrapper)`
+export const Wrapper = styled(UpriseInOrder)`
   position: relative;
   margin: 0 auto;
   padding-top: ${({ theme }) => theme.layout.statistic.top};

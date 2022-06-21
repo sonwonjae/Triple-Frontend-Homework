@@ -5,18 +5,18 @@ import { Award, Count } from '../../components'
 import * as StatisticStyle from './Statistic.style'
 
 interface StatisticProps {
-  floatAnimation: {
+  upriseAnimation: {
     duration: number
     delay: number
   }
 }
 
-function Statistic({ floatAnimation }: StatisticProps) {
+function Statistic({ upriseAnimation }: StatisticProps) {
   return (
     <StatisticStyle.Container>
       <StatisticStyle.Wrapper
-        duration={floatAnimation.duration}
-        delay={floatAnimation.delay}
+        duration={upriseAnimation.duration}
+        delay={upriseAnimation.delay}
       >
         <StatisticStyle.BestAwardTriple>
           2021년 12월 기준
