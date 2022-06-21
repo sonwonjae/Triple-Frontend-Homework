@@ -1,6 +1,5 @@
-import APPLE_BADGE_IMG from '../../assets/badge-apple4x.png'
-import PLAY_STORE_IMG from '../../assets/play-store2x.png'
 import { Award, Count } from '../../components'
+import { image } from '../../constants'
 
 import * as StatisticStyle from './Statistic.style'
 
@@ -47,7 +46,7 @@ function Statistic({ upriseAnimation, countAnimation }: StatisticProps) {
         <StatisticStyle.AwardList>
           <li>
             <Award
-              backgroundImgSrc={PLAY_STORE_IMG}
+              backgroundImgSrc={image.PLAY_STORE}
               when={2018}
               where="구글 플레이 스토어"
             >
@@ -56,7 +55,7 @@ function Statistic({ upriseAnimation, countAnimation }: StatisticProps) {
           </li>
           <li>
             <Award
-              backgroundImgSrc={APPLE_BADGE_IMG}
+              backgroundImgSrc={image.APPLE_BADGE}
               when={2018}
               where="애플 앱스토어"
             >

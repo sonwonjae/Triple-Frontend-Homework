@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-import BEST_AWARD_TRIPLE_IMG from '../../assets/triple2x.png'
 import { UpriseInOrder } from '../../components'
+import { image } from '../../constants'
 
 export const Container = styled.div`
   position: relative;
@@ -30,7 +30,7 @@ export const BestAwardTriple = styled.div`
   background-size: ${({ theme }) =>
     `${theme.layout.bestAwardTripple.width} ${theme.layout.bestAwardTripple.height}`};
   background-repeat: no-repeat;
-  background-image: url(${BEST_AWARD_TRIPLE_IMG});
+  background-image: url(${image.BEST_AWARD_TRIPLE});
   padding-top: ${({ theme }) => theme.layout.bestAwardTripple.padding.top};
   text-align: center;
   color: ${({ theme }) => theme.color.font.bright};
